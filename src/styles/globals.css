@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Handlee&family=Macondo&display=swap');
 
 * {
   box-sizing: border-box;
@@ -7,19 +8,20 @@
 
 html,
 body {
+  font-family: 'Macondo', cursive;
   max-width: 100vw;
   overflow-x: hidden;
-  color:#FFE4D6;
-  background-color: #0F0F0F;
+  color: #ffe4d6;
+  background-color: #0f0f0f;
   scroll-behavior: smooth;
 }
 
-
-a{
-  color:inherit;
+a {
+  color: inherit;
   text-decoration: none;
+  font-family: inherit;
 }
 
-a:hover{
-  color:#EFDF50;
+a:hover {
+  color: #efdf50;
 }

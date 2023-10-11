@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import { AboutSection, HeroSection } from '@/features'
+import { AboutSection, HeroSection, MediaPlayer } from '@/features'
 
 export default function Home() {
   return (
@@ -12,6 +12,7 @@ export default function Home() {
       </Head>
       <HeroSection />
       <AboutSection />
+      <MediaPlayer />
     </>
   )
 }

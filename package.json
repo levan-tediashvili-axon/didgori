@@ -11,11 +11,16 @@
   "dependencies": {
     "@emotion/react": "^11.11.1",
     "@emotion/styled": "^11.11.0",
+    "@fullpage/react-fullpage": "^0.1.40",
     "@mui/material": "^5.14.13",
     "next": "13.5.4",
     "react": "^18",
+    "react-audio-player": "^0.17.0",
     "react-dom": "^18",
-    "react-feather": "^2.0.10"
+    "react-feather": "^2.0.10",
+    "react-player": "^2.13.0",
+    "react-responsive-carousel": "^3.2.23",
+    "swiper": "^10.3.1"
   },
   "devDependencies": {
     "@types/node": "^20",
