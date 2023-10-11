@@ -46,8 +46,8 @@ export const HeroSection = () => {
 
       <Stack
         justifyContent="center"
-        spacing={4}
-        pl={10}
+        spacing={6}
+        pl={{ xs: 2, md: 10 }}
         sx={{
           position: 'absolute',
           top: 0,
@@ -59,11 +59,18 @@ export const HeroSection = () => {
             'linear-gradient(5deg, #0F0F0F,#0F0F0F 15%,rgba(0,0,0,0.1)) rgba(0,0,0,0.5)',
         }}
       >
-        <Typography variant="h1" fontFamily="Macondo">
-          Didgori
-        </Typography>
-        <Navigation />
-        <SocialLinks />
+        <Stack>
+          <Typography variant="h4" fontFamily="Macondo">
+            Ensemble
+          </Typography>
+          <Typography variant="h1" fontFamily="Macondo">
+            Didgori
+          </Typography>
+        </Stack>
+        <Stack spacing={4}>
+          <Navigation />
+          <SocialLinks />
+        </Stack>
       </Stack>
     </Stack>
   )

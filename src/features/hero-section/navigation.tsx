@@ -13,13 +13,21 @@ const pages = [
 
 export const Navigation = () => {
   return (
-    <Stack direction="row" spacing={2}>
+    <Stack direction={{ xs: 'column', md: 'row' }} spacing={2}>
       {pages.map((page, idx) => (
         <React.Fragment key={page.id}>
           <Link href={page.path}>
             <Typography variant="h5">{page.label}</Typography>
           </Link>
-          {idx !== pages.length - 1 && <Typography variant="h5">\</Typography>}
+          {idx !== pages.length - 1 && (
+            <Typography
+              variant="h5"
+              // fontSize={{ xs: '1rem', md: '1.5rem' }}
+              sx={{ display: { xs: 'none', md: 'block' } }}
+            >
+              \
+            </Typography>
+          )}
         </React.Fragment>
       ))}
     </Stack>

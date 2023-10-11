@@ -14,7 +14,7 @@ export const SocialLinks = () => {
   return (
     <Stack direction="row" spacing={2}>
       {socialLinks.map(({ id, Icon, url }) => (
-        <Link key={id} href={url}>
+        <Link key={id} href={url} target="_blank">
           <Icon />
         </Link>
       ))}
