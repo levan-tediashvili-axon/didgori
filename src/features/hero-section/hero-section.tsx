@@ -19,6 +19,7 @@ export const HeroSection = () => {
         autoPlay
         showThumbs={false}
         showArrows={false}
+        showStatus={false}
         width="100vw"
         infiniteLoop
       >

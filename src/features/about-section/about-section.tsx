@@ -15,7 +15,7 @@ export const AboutSection = () => {
     <Stack
       id="about"
       direction={{ xs: 'column', md: 'row' }}
-      height="100vh"
+      height="100dvh"
       alignItems="center"
       justifyContent="center"
       spacing={2}
