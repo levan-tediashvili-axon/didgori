@@ -15,16 +15,18 @@ export const AboutSection = () => {
     <Stack
       id="about"
       direction={{ xs: 'column', md: 'row' }}
-      height="100dvh"
+      minHeight="100vh"
       alignItems="center"
       justifyContent="center"
       spacing={2}
       px={{ xs: 4, md: 10 }}
+      py={5}
     >
       <Box
         position="relative"
         width={{ xs: '100%', md: '50%' }}
         height="50%"
+        minHeight={{ xs: 300, md: 500 }}
         overflow="hidden"
       >
         <Image
