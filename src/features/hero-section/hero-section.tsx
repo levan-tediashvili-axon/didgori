@@ -14,7 +14,11 @@ const sliderImages = [
 
 export const HeroSection = () => {
   return (
-    <Stack sx={{ height: '100vh' }} alignItems="center" justifyContent="center">
+    <Stack
+      sx={{ height: '100dvh' }}
+      alignItems="center"
+      justifyContent="center"
+    >
       <Carousel
         autoPlay
         showThumbs={false}
@@ -26,7 +30,7 @@ export const HeroSection = () => {
         {sliderImages.map((image) => (
           <Box
             key={image}
-            height="100vh"
+            height="100dvh"
             width="100vw"
             overflow="hidden"
             position="relative"
