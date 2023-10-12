@@ -3,7 +3,6 @@ import Link from 'next/link'
 import { Stack, Typography } from '@mui/material'
 
 const pages = [
-  { id: 0, path: '#home', label: 'Home' },
   { id: 1, path: '#about', label: 'About' },
   { id: 2, path: '#calendar', label: 'Calendar' },
   { id: 3, path: '#news', label: 'News' },
