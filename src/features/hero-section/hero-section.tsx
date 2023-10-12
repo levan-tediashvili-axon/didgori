@@ -58,7 +58,7 @@ export const HeroSection = () => {
           top: 0,
           left: 0,
           width: '100%',
-          height: '100%',
+          height: '100dvh',
           backdropFilter: 'saturate(80%)',
           background:
             'linear-gradient(5deg, #0F0F0F,#0F0F0F 15%,rgba(0,0,0,0.1)) rgba(0,0,0,0.5)',
