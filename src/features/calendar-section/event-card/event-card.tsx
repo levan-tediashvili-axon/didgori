@@ -1,7 +1,7 @@
 import { useMediaQuery, useTheme } from '@mui/material'
 import { EventCardDesktop } from './event-card-desktop'
 import { EventCardMobile } from './event-card-mobile'
-import { IEvent } from '../calendar-data'
+import { IEvent } from '@/mocks'
 
 type Props = { event: IEvent }
 

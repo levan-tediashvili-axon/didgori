@@ -1,8 +1,7 @@
 import React from 'react'
 import { Stack, Typography } from '@mui/material'
 import { EventCard } from './event-card'
-
-import { upcomingEvents } from './calendar-data'
+import { upcomingEvents } from '@/mocks'
 
 export const CalendarSection = () => {
   return (

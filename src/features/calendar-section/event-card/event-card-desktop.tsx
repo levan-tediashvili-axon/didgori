@@ -3,7 +3,7 @@ import Link from 'next/link'
 import { Fade, Slide, Stack, Typography } from '@mui/material'
 import { EventDate } from './event-date'
 import { ArrowRight } from 'react-feather'
-import { IEvent } from '../calendar-data'
+import { IEvent } from '@/mocks'
 
 type Props = { event: IEvent }
 
