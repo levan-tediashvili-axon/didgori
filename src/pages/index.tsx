@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import { AboutSection, HeroSection, MediaPlayer } from '@/features'
+import { CalendarSection } from '@/features/calendar-section'
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       </Head>
       <HeroSection />
       <AboutSection />
+      <CalendarSection />
       <MediaPlayer />
     </>
   )
