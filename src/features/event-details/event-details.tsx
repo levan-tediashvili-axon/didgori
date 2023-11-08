@@ -6,6 +6,7 @@ import { Container, Stack, Typography } from '@mui/material'
 import { ArrowLeft, Calendar, MapPin } from 'react-feather'
 import { useRouter } from 'next/router'
 import dayjs from 'dayjs'
+import { useTranslation } from 'next-i18next'
 
 const events = pastEvents.concat(upcomingEvents)
 
@@ -14,6 +15,7 @@ type Props = {
 }
 
 export const EventDetails = ({ eventId }: Props) => {
+  const { t } = useTranslation()
   const event = events.find((currentEvent) => currentEvent.eventId === eventId)
   const router = useRouter()
 
@@ -35,7 +37,7 @@ export const EventDetails = ({ eventId }: Props) => {
         onClick={router.back}
       >
         <ArrowLeft />
-        <Typography>Go back</Typography>
+        <Typography>{t('go_back')}</Typography>
       </Stack>
       <Stack alignItems="center" spacing={1}>
         <Stack width="600px" height="400px" position="relative">

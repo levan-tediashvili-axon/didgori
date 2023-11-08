@@ -1,16 +1,22 @@
-import React from 'react'
+import React, { useMemo } from 'react'
 import Link from 'next/link'
 import { Stack, Typography } from '@mui/material'
-
-const pages = [
-  { id: 1, path: '#about', label: 'About' },
-  { id: 2, path: '#calendar', label: 'Calendar' },
-  { id: 3, path: '#news', label: 'News' },
-  { id: 4, path: '#gallery', label: 'Gallery' },
-  { id: 5, path: '#contact', label: 'Contact' },
-]
+import { useTranslation } from 'next-i18next'
 
 export const Navigation = () => {
+  const { t } = useTranslation()
+
+  const pages = useMemo(
+    () => [
+      { id: 1, path: '#about', label: t('about') },
+      { id: 2, path: '#calendar', label: t('calendar') },
+      { id: 3, path: '#news', label: t('news') },
+      { id: 4, path: '#gallery', label: t('gallery') },
+      { id: 5, path: '#contact', label: t('contact') },
+    ],
+    [t],
+  )
+
   return (
     <Stack direction={{ xs: 'column', md: 'row' }} spacing={2}>
       {pages.map((page, idx) => (
