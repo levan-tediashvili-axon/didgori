@@ -11,7 +11,7 @@ const PageEventDetails = () => {
       router.push('/')
       return
     }
-  }, [])
+  }, [router])
 
   return <EventDetails eventId={router.query.eventId as string} />
 }
