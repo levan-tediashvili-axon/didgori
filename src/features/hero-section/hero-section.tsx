@@ -4,6 +4,7 @@ import React from 'react'
 import { Navigation } from './navigation'
 import { SocialLinks } from './social-links'
 import { Carousel } from 'react-responsive-carousel'
+import { useTranslation } from 'next-i18next'
 
 const sliderImages = [
   '/images/1.jpeg',
@@ -13,6 +14,7 @@ const sliderImages = [
 ]
 
 export const HeroSection = () => {
+  const { t } = useTranslation()
   return (
     <Stack
       sx={{ height: '100dvh' }}
@@ -66,10 +68,10 @@ export const HeroSection = () => {
       >
         <Stack>
           <Typography variant="h4" fontFamily="Macondo">
-            Ensemble
+            {t('ensemble')}
           </Typography>
           <Typography variant="h1" fontFamily="Macondo">
-            Didgori
+            {t('didgori')}
           </Typography>
         </Stack>
         <Stack spacing={4}>
