@@ -2,10 +2,9 @@
 import React from 'react'
 import { pastEvents, upcomingEvents } from '@/mocks'
 import Image from 'next/image'
-import { Box, Container, Stack, Typography } from '@mui/material'
+import { Container, Stack, Typography } from '@mui/material'
 import { ArrowLeft, Calendar, MapPin } from 'react-feather'
 import { useRouter } from 'next/router'
-import { MapContainer, Marker, Popup, TileLayer } from 'react-leaflet'
 import dayjs from 'dayjs'
 
 const events = pastEvents.concat(upcomingEvents)
